@@ -1,0 +1,65 @@
+@import "../../../styles/colors.scss";
+@import "../../../styles/fonts.scss";
+
+.tableContainer {
+  width: 100%;
+  font-family: $spaceMono;
+  font-size: 14px;
+
+  & thead tr {
+    background: transparent;
+  }
+
+  & thead tr td {
+    padding: 20px 0;
+    font-weight: bold;
+  }
+
+  & tbody tr {
+    background-color: $white-color;
+  }
+
+  & tbody tr td:nth-child(2) {
+    padding: 16px 40px;
+  }
+
+  & tbody tr td {
+    padding: 0px 8px;
+  }
+
+  & tbody tr td div[data-highlight] {
+    color: $base-color;
+    font-weight: bold;
+    font-size: 1rem;
+  }
+
+  .emptyState {
+    padding: 25px;
+    text-align: center;
+
+    & img {
+      width: 350px;
+    }
+
+    & .descriptionEmpty {
+      margin-top: 20px;
+      font-size: 16px;
+    }
+  }
+
+  .actionContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: $red-color;
+    cursor: pointer;
+
+    & [data-edit] {
+      color: $base-color;
+    }
+  }
+}
+
+.tableWrapper {
+  position: relative;
+}

@@ -1,0 +1,43 @@
+@import "../../../styles/colors.scss";
+@import "../../../styles/fonts.scss";
+
+.inputContainer {
+  font-family: $poppins;
+  font-size: 14px;
+
+  & input {
+    font-family: $spaceMono;
+    color: $black-color;
+    background: $grey-color;
+    font-size: 14px;
+    padding: 8px;
+    border-radius: 4px;
+    border: none;
+    width: 100%;
+    display: block;
+    transition: all 0.3s;
+
+    // &:placeholder-shown + label {
+    //   opacity: 0;
+    //   visibility: hidden;
+    //   -webkit-transform: translateY(-4rem);
+    //   transform: translateY(-4rem);
+    // }
+
+    &:focus {
+      border: none;
+    }
+  }
+
+  & label {
+    font-size: 12px;
+    transition: all 0.3s;
+    color: $grey-color-label;
+  }
+}
+
+.warningMessage {
+  color: $base-color;
+  font-size: 10px;
+  margin-bottom: 4px;
+}

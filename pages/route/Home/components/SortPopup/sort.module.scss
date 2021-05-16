@@ -1,0 +1,11 @@
+@import "../../../../../styles/colors.scss";
+
+.chipsStyles {
+  border: solid 1px $base-color;
+  margin-bottom: 12px;
+}
+
+.chipsActive {
+  background: $base-color;
+  color: $white-color;
+}

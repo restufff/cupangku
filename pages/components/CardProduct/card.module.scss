@@ -1,0 +1,74 @@
+@import "../../../styles/colors.scss";
+@import "../../../styles/fonts.scss";
+
+.container {
+  // height: 100px;
+  background: $white-color;
+  border-radius: 4px;
+  margin-bottom: 24px;
+  padding: 14px 20px;
+  position: relative;
+
+  & [data-section] {
+    display: flex;
+
+    // & > div {
+    //   width: 100%;
+    // }
+
+    &:first-child {
+      margin-bottom: 8px;
+    }
+  }
+
+  & label {
+    font-size: 10px;
+    color: $grey-color-label;
+    display: block;
+    font-family: $poppins;
+    font-weight: 500;
+  }
+
+  & .highlight {
+    color: $base-color;
+    font-family: $spaceMono;
+    font-weight: 600;
+    width: 50%;
+    margin-right: 15px;
+  }
+
+  & .sizeStyle {
+    color: $black-color;
+    font-weight: 300;
+    width: 50%;
+  }
+
+  & .locationStyle {
+    font-size: 14px;
+    color: $black-color;
+    padding-right: 20px;
+    width: 50%;
+  }
+
+  & .pricesStyle {
+    font-size: 14px;
+  }
+
+  & .dateCreated {
+    font-size: 11px;
+    margin-top: 12px;
+  }
+
+  & .actionContainer {
+    color: $red-color;
+    position: absolute;
+    margin-top: 4px;
+    right: 8px;
+    bottom: 8px;
+
+    & [data-edit] {
+      color: $base-color;
+      margin-left: 12px;
+    }
+  }
+}

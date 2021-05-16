@@ -1,0 +1,9 @@
+.inputContainer {
+  display: flex;
+  align-items: center;
+
+  & input {
+    background: transparent;
+    margin-bottom: 0px;
+  }
+}

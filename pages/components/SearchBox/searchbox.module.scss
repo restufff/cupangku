@@ -1,0 +1,24 @@
+@import "../../../styles/colors.scss";
+
+.searchBoxContainer {
+  background: $white-color;
+}
+
+.searchContainer {
+  display: flex;
+  background: $white-color;
+  border-radius: 4px;
+}
+
+.selectContainer {
+  background: transparent;
+  width: 200px;
+}
+
+.inputContainer {
+  width: 100%;
+  & input {
+    background: transparent;
+    margin-bottom: 0px;
+  }
+}

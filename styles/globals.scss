@@ -1,0 +1,119 @@
+@import "colors.scss";
+@import "fonts.scss";
+@import "responsive.scss";
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: $poppins;
+  background: $base-color;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+  outline: none;
+}
+
+.react-confirm-alert {
+  &-overlay {
+    background: rgb(0 0 0 / 0.75);
+  }
+
+  & > &-body {
+    border-radius: 4px;
+    font-family: $spaceMono;
+    width: 400px;
+
+    @include tablet {
+      width: 100%;
+    }
+
+    & h1 {
+      font-family: $poppins;
+    }
+
+    & > .react-confirm-alert-button-group {
+      & > button {
+        background: transparent;
+        color: $black-color;
+        padding: 10px 36px;
+        font-size: 14px;
+        font-family: $poppins;
+      }
+
+      & > button:first-child {
+        background: $action-color;
+        color: $black-color;
+      }
+    }
+  }
+}
+
+.select-react__control {
+  font-family: $poppins;
+  font-size: 14px;
+  border: none !important;
+  border-top-right-radius: 0px !important;
+  border-bottom-right-radius: 0px !important;
+}
+
+.mobileOnly {
+  @include desktop {
+    display: none;
+  }
+}
+
+.pagination {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  display: flex;
+  padding-left: 0;
+  list-style: none;
+  border-radius: 0.25rem;
+
+  & li {
+    a {
+      position: relative;
+      display: block;
+      padding: 10px 16px;
+      margin-left: -1px;
+      line-height: 1.25;
+      color: $base-color;
+      background-color: #fff;
+      border: 1px solid #dee2e6;
+    }
+  }
+
+  li.disabled {
+    a {
+      color: #6c757d;
+      pointer-events: none;
+      cursor: auto;
+      background-color: #fff;
+      border-color: #dee2e6;
+    }
+  }
+
+  li.active {
+    a {
+      z-index: 1;
+      color: #fff;
+      background-color: $action-color;
+      border-color: $action-color;
+    }
+  }
+}

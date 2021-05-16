@@ -1,0 +1,85 @@
+@import "../../../../../styles/responsive.scss";
+
+.headerContainer {
+  margin-top: 60px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.selectContainer {
+  width: 240px;
+}
+
+.filterContainer {
+  display: flex;
+
+  .searchBox {
+    margin-right: 8px;
+  }
+}
+
+.filteredContainer {
+  margin-top: 16px;
+  margin-bottom: 10px;
+  width: 100%;
+  overflow-x: auto;
+
+  & .filteredWrapper {
+    width: auto;
+    display: flex;
+    flex-wrap: nowrap;
+  }
+}
+
+@include tablet {
+  .selectContainer {
+    display: none;
+  }
+
+  .buttonAdd {
+    display: none;
+  }
+
+  .filterContainer {
+    width: 100%;
+
+    .searchBox {
+      width: 100%;
+    }
+  }
+}
+
+.buttonFilterMobile {
+  @include desktop {
+    display: none;
+  }
+}
+
+.sortModalForm {
+  width: 100%;
+  background: #fff;
+  height: 100%;
+  padding: 16px;
+  transform: translateY(60%);
+  border-top-right-radius: 20px;
+  border-top-left-radius: 20px;
+  outline: none;
+
+  @include desktop {
+    display: none;
+  }
+}
+
+.overlayModal {
+  position: fixed;
+  height: 100%;
+  inset: 0px;
+  top: 0px;
+  width: 100%;
+  background-color: rgb(0 0 0 / 75%);
+
+  @include desktop {
+    display: none;
+  }
+}
